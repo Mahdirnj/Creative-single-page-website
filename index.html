@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Web Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#goals">Goals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#placehold">Place Holder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h1 class="display-4">Here is our web project</h1>
+            <p class="lead">Created by Mahdi Ranjkesh </p>
+            <a href="#about" class="btn btn-primary mt-3">Explore</a>
+        </div>
+    </header>
+
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-md-6 mb-1 mt-3 mb-md-0">
+                <img src="./emile-perron-xrVDYZRGdw4-unsplash.jpg" class="img-fluid rounded" alt="About Us">
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-title">About</h2>
+                <p>In this project we tried to create a project that contains a things that has been told in class.</p>
+                <p>In this site we have used Html , CSS , JS , Less framework , Bootstrap and jQuery.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="goals" class="bg-dark py-5 text-white ">
+        <div class="container">
+            <h2 class="section-title text-center">Our Goals</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./ilya-pavlov-OqtafYT5kTw-unsplash.jpg" class="card-img-top" alt="Web Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsivenes </h5>
+                            <p class="card-text">Creating a responsive websites by using Bootstrap.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./luca-bravo-XJXWbfSo2f0-unsplash.jpg" class="card-img-top" alt="Development">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS and Less</h5>
+                            <p class="card-text">Building creative website .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="./maik-jonietz-_yMciiStJyY-unsplash.jpg" class="card-img-top" alt="Branding">
+                        <div class="card-body">
+                            <h5 class="card-title">JS and jQuery   </h5>
+                            <p class="card-text">Add a some functionality to the web site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="placehold" class="container py-5">
+        <h2 class="section-title text-center">Some card to act as place holders</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./k8-vcxkfmIpnQw-unsplash.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">An innovative Design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./paris-bilal-UnKJZHBzX30-unsplash.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">A creative piece of art.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./tomas-malik-FZoryiQFcGg-unsplash.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">A busy NYC metro station.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark py-5 text-white">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

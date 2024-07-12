@@ -1,0 +1,96 @@
+@primary-color: #f8f9fa;
+@secondary-color: #1a1a1a;
+@card-bg-color: #343a40;
+@fade-duration: 1s;
+@transition-time: 0.2s;
+@ease-in-out: ease-in-out;
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: @secondary-color;
+  color: @primary-color;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity @transition-time;
+  opacity: 1;
+
+  &.fade-out {
+    opacity: 0;
+  }
+}
+
+.hero-section {
+  background: url('./wal.jpg') no-repeat center center / cover;
+  height: 100vh;
+  color: @primary-color;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+  .container {
+    h1 {
+      font-size: 4rem;
+      animation: fadeInDown @fade-duration @ease-in-out;
+    }
+
+    p {
+      font-size: 1.25rem;
+      animation: fadeInUp @fade-duration @ease-in-out 0.5s;
+    }
+
+    .btn {
+      animation: fadeInUp @fade-duration @ease-in-out 1s;
+    }
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s @ease-in-out, transform 0.5s @ease-in-out;
+
+  &.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  transition: transform 0.3s;
+  background-color: @card-bg-color;
+  color: @primary-color;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+footer {
+  background-color: @card-bg-color;
+  color: @primary-color;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
