@@ -1,4 +1,4 @@
-![Header image](Screenshot 2025-09-16 170409.png)
+![Header image](Screenshot%202025-09-16%20170409.png)
 
 # Creative Single Page Website 🌟
 
@@ -29,10 +29,12 @@ Make your online presence unforgettable with this Creative Single Page Website!
 
 ## Screenshots
 
-![Homepage screenshot](Screenshot 2025-09-16 170409.png)
+![Homepage screenshot](Screenshot%202025-09-16%20170409.png)
 
 *Figure 1: Hero section with navigation and call-to-action buttons.*
 
-![Alternate screenshot](Screenshot 2025-09-16 170424.png)
+![Alternate screenshot](Screenshot%202025-09-16%20170424.png)
 
 *Figure 2: Responsive layout preview.*
+
+> Note: GitHub sometimes has trouble displaying local files with spaces in their filenames. If the images still do not display, consider renaming the files to remove spaces (for example `Screenshot_2025-09-16_170409.png`) and updating the image paths accordingly.
