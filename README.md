@@ -36,5 +36,3 @@ Make your online presence unforgettable with this Creative Single Page Website!
 ![Alternate screenshot](Screenshot%202025-09-16%20170424.png)
 
 *Figure 2: Responsive layout preview.*
-
-> Note: GitHub sometimes has trouble displaying local files with spaces in their filenames. If the images still do not display, consider renaming the files to remove spaces (for example `Screenshot_2025-09-16_170409.png`) and updating the image paths accordingly.
