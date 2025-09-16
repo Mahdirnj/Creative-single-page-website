@@ -1,87 +1,81 @@
-body {
-  font-family: 'Raleway', sans-serif;
-  background-color: #1a1a1a;
-  color: #f8f9fa;
+:root{
+  --bg: #0f1720;
+  --panel: #0f1723;
+  --muted: #94a3b8;
+  --accent: #2dd4bf;
+  --accent-2: #60a5fa;
+  --glass: rgba(255,255,255,0.06);
+  --card: rgba(255,255,255,0.03);
+  --text: #e6eef8;
+  --radius: 12px;
+  --container-max: 1100px;
 }
 
-.navbar {
-  background-color: rgba(0, 0, 0, 0.4);
-  transition: opacity 0.2s;
-  opacity: 1; 
+/* Reset + base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, Raleway, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg,var(--bg), #07101a 140%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
 }
 
-.navbar.fade-out {
-  opacity: 0;
+/* Container tuning */
+.container{max-width:var(--container-max);margin:0 auto;padding-left:1rem;padding-right:1rem}
+
+/* Navbar */
+.navbar{background:transparent;padding:0.75rem 0;backdrop-filter:blur(6px)}
+.navbar .brand-text{font-weight:700;letter-spacing:0.2px}
+.navbar .nav-link{color:var(--text);opacity:0.9}
+.navbar .nav-link:hover{color:var(--accent);opacity:1}
+
+/* Hero */
+.hero-section{position:relative;display:flex;align-items:center;min-height:80vh;padding-top:5rem;padding-bottom:5rem;background-image:url('./wal.jpg');background-size:cover;background-position:center}
+.hero-section::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,0.45),rgba(2,6,23,0.65));mix-blend:multiply}
+.hero-content{position:relative;z-index:2;max-width:900px;margin:0 auto;color:var(--text);padding:3rem;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:var(--radius)}
+.hero-content h1{font-size:2.4rem;margin:0 0 0.5rem 0;font-weight:700}
+.hero-content p{color:var(--muted);margin:0}
+.btn-cta{padding:0.75rem 1.25rem;border-radius:10px;font-weight:600}
+
+/* Sections */
+section{padding:3.5rem 0}
+.section-title{font-size:1.6rem;margin-bottom:1.25rem;color:var(--text);text-align:center}
+
+/* Cards */
+.card{background:var(--card);border:none;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,0.6);transition:transform .35s,box-shadow .35s}
+.card img{height:220px;object-fit:cover;width:100%;display:block}
+.card-body{color:var(--text)}
+.card:hover{transform:translateY(-10px);box-shadow:0 18px 40px rgba(2,6,23,0.6)}
+
+/* Form + contact */
+form .form-control{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);border-radius:8px;padding:.75rem}
+.form-label{color:var(--muted)}
+
+/* Footer */
+footer{background:transparent;padding:2rem 0;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,0.03)}
+
+/* Utilities */
+.bg-dark{background:linear-gradient(180deg,#071422,#041018)}
+
+/* Responsive */
+@media(min-width:768px){
+  .hero-content h1{font-size:3rem}
+  .card img{height:260px}
 }
 
-.hero-section {
-  background: url('./wal.jpg') no-repeat center center / cover;
-  height: 100vh;
-  color: #f8f9fa;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+@media(min-width:1200px){
+  .hero-section{min-height:92vh}
+  .hero-content{padding:4rem}
 }
 
-.hero-section .container h1 {
-  font-size: 4rem;
-  animation: fadeInDown 1s ease-in-out;
-}
+/* Small animations */
+@keyframes floatUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.hero-content{animation:floatUp .9s ease-out both}
 
-.hero-section .container p {
-  font-size: 1.25rem;
-  animation: fadeInUp 1s ease-in-out 0.5s;
-}
+/* Accessibility focus */
+a:focus,button:focus,.form-control:focus{outline:3px solid rgba(96,165,250,0.14);outline-offset:3px}
 
-.hero-section .container .btn {
-  animation: fadeInUp 1s ease-in-out 1s;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.in-view {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.card {
-  transition: transform 0.3s;
-  background-color: #343a40;
-  color: #f8f9fa;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-footer {
-  background-color: #343a40;
-  color: #f8f9fa;
-}
-
-@keyframes fadeInDown {
-  from {
-      opacity: 0;
-      transform: translateY(-20px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-      opacity: 0;
-      transform: translateY(20px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
