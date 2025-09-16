@@ -1,4 +1,6 @@
-Creative Single Page Website 🌟
+![Header image](Screenshot 2025-09-16 170409.png)
+
+# Creative Single Page Website 🌟
 
 This repository features a modern, responsive, and visually stunning single-page website—perfect for personal portfolios, business landing pages, or product showcases. With a sleek design and smooth functionality, it’s tailored to leave a lasting impression.
 
@@ -23,4 +25,14 @@ git clone https://github.com/Mahdirnj/Creative-single-page-website.git
 	2.	Open index.html in your browser to view the website.
 	3.	Customize the design to fit your needs and goals!
 
-Make your online presence unforgettable with this Creative Single Page Website! 
+Make your online presence unforgettable with this Creative Single Page Website!
+
+## Screenshots
+
+![Homepage screenshot](Screenshot 2025-09-16 170409.png)
+
+*Figure 1: Hero section with navigation and call-to-action buttons.*
+
+![Alternate screenshot](Screenshot 2025-09-16 170424.png)
+
+*Figure 2: Responsive layout preview.*
